@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+
+/* Josh Comeau's CSS Reset */
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Colors and Fonts */
+
+:root {
+  /* ### Primary */
+
+  --Intro-email-background: hsl(217, 28%, 15%);
+  --Main-background: hsl(218, 28%, 13%);
+  --Footer-background: hsl(216, 53%, 9%);
+  --Testimonials-background: hsl(219, 30%, 18%);
+
+  /* ### Accent */
+
+  --Inside-call-to-action-gradient1: hsl(176, 68%, 64%);
+  --Inside-call-to-action-gradient2: hsl(198, 60%, 50%);
+  --Error: hsl(0, 100%, 63%);
+
+  /* ### Neutral */
+
+  --White: hsl(0, 0%, 100%);
+
+  --ff-heading-cta-nav: "Raleway", sans-serif;
+  --ff-body: "Open Sans", sans-serif;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+/* General Styling */
+
+body {
+  color: var(--White);
+  font-size: 0.875rem;
+  font-family: var(--ff-body);
+  text-align: center;
+}
+
+header {
+  background: var(--Intro-email-background) url("../images/bg-curvy-mobile.svg")
+    no-repeat bottom center/contain;
+  padding: 1.875rem 1.375rem;
+  display: grid;
+  grid-template-areas:
+  "one two"
+  "three three";
+ row-gap: 3.75rem;
+}
+
+footer {
+  background-color: var(--Footer-background);
+}
+
+h1,
+h2,
+button,
+nav {
+  font-family: var(--ff-heading-cta-nav);
+}
+
+/* Header Styling */
+
+.header_logo {
+  width: 5rem;
+  grid-area: one;
+}
+
+.header_menu {
+  grid-area: two;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+}
+
+.header_menu a {
+  text-decoration: none;
+  color: var(--White);
+  font-size: .75rem;
+}
+
+.header_image {
+  grid-area: three;
+  padding: 0 1.875rem;
+}
+
+/* Main bloc styling */
+
+.product_description {
+  background-color: var(--Main-background);
+  padding: 1.875rem;
+}
+
+.main_heading {
+  display: grid;
+  gap: 1.125rem;
+}
+
+.main_heading h1 {
+  font-size: 1.5rem;
+}
+
+.main_heading p {
+  font-size: .875rem;
+}
+
+button {
+  margin: auto;
+  width: 14.5rem;
+  border: none;
+  color: var(--White);
+  font-weight: var(--fw-bold);
+  background-image: linear-gradient(to right, var(--Inside-call-to-action-gradient1), var(--Inside-call-to-action-gradient2));
+  padding: .875rem 1rem;
+  border-radius: 2rem;
+}
+
+.top_button {
+  margin-top: .875rem;
+} 
+
+
