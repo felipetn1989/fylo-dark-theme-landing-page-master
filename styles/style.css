@@ -213,7 +213,7 @@ button {
 /* Product description bloc styling */
 
 .product_description {
-  margin-top: .75rem;
+  margin-top: 0.75rem;
   display: grid;
   gap: 5.75rem;
   margin-bottom: 8.5rem;
@@ -335,6 +335,20 @@ footer {
 /* Early access bloc styling */
 
 .early_access {
+  display: grid;
+  gap: 1rem;
   background-color: var(--Intro-email-background);
   margin: 0 1.25rem;
+  border-radius: 0.75rem;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.397);
+  padding: 2.25rem 1.75rem;
+}
+
+.label_word {
+  display: none;
+}
+
+#iemail,
+.bottomButton {
+  width: 100%;
 }
