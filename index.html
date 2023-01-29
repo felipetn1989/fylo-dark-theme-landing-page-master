@@ -34,7 +34,7 @@
         alt="An illustration of two people going through files in a giant file folder"
       />
     </header>
-    
+
     <main class="card">
       <img
         class="curvy_bg"
@@ -182,13 +182,14 @@
             <span class="label_word">Email:</span>
             <input
               type="email"
-              name="email"
+              name="mail"
               id="iemail"
               placeholder=" email@example.com"
+              required
             />
           </label>
+          <button class="start bottomButton">Get Started For Free</button>
         </form>
-        <button class="start bottomButton">Get Started For Free</button>
       </section>
     </main>
 
@@ -207,11 +208,16 @@
         <li><a href="#">About Us</a></li>
         <li><a href="#">Jobs</a></li>
         <li><a href="#">Press</a></li>
-        <li><a href="#">Blog</a></li>
+        <li class="extra_space"><a href="#">Blog</a></li>
         <li><a href="#">Contact Us</a></li>
         <li><a href="#">Terms</a></li>
         <li><a href="#">Privacy</a></li>
       </ul>
+      <div class="social_icons">
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-twitter"></ion-icon>
+        <ion-icon name="logo-instagram"></ion-icon>
+      </div>
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
@@ -223,4 +229,8 @@
       </p>
     </footer>
   </body>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
 </html>
