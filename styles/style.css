@@ -379,6 +379,7 @@ footer {
 }
 
 form {
+  position: relative;
   margin-top: 1rem;
   display: grid;
   gap: 1.5rem;
@@ -402,6 +403,16 @@ form {
 #iemail::placeholder {
   font-size: 0.6875rem;
   color: grey;
+}
+
+.error_msg {
+  display: none;
+  position: absolute;
+  text-align: left;
+  font-size: .6875rem;
+  color: red;
+  top: 3.25rem;
+  left: 1.5rem;
 }
 
 /* Footer styling */
@@ -500,6 +511,12 @@ ion-icon:hover {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* Classes for JavaScript */
+
+.display {
+  display: block;
 }
 
 /* Media query for desktops */
@@ -626,6 +643,7 @@ ion-icon:hover {
     width: 54rem;
     margin: auto;
     padding: 2.5rem 5rem;
+    margin-top: 2.5rem;
   }
 
   .early_access h3 {
