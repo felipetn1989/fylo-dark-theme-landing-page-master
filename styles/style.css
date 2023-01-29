@@ -286,6 +286,7 @@ footer {
   gap: 1.5rem;
   padding: 0 3rem;
   margin-top: 11.25rem;
+  margin-bottom: -1rem;
 }
 
 .testimonials::before {
@@ -342,6 +343,11 @@ footer {
   border-radius: 0.75rem;
   box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.397);
   padding: 2.25rem 1.75rem;
+  transform: translateY(50%);
+}
+
+.early_access h3 {
+  font-size: 1.0625rem;
 }
 
 form {
@@ -377,6 +383,7 @@ footer {
   gap: 3.25rem;
   text-align: left;
   font-size: 0.9375rem;
+  padding-top: 16rem;
 }
 
 address {
