@@ -156,6 +156,12 @@ h2 {
   font-size: 0.75rem;
 }
 
+.header_menu a:hover {
+  cursor: pointer;
+  font-weight: var(--fw-bold);
+  text-decoration: underline;
+}
+
 .header_image {
   grid-area: three;
   padding: 0 1.875rem;
@@ -204,6 +210,12 @@ button {
   );
   padding: 0.875rem 1rem;
   border-radius: 2rem;
+}
+
+button:hover {
+  cursor: pointer;
+  background-image: unset;
+  background-color: #8cdae4;
 }
 
 .top_button {
@@ -276,6 +288,16 @@ footer {
   height: 1rem;
   display: inline-block;
   background: url("../images/icon-arrow.svg") no-repeat center center/cover;
+}
+
+.fylo_works:hover {
+  cursor: pointer;
+  color: var(--White);
+  border-color: var(--White);
+}
+
+.fylo_works:hover::after {
+  background-image: url("../images/icon-arrow-white.png");
 }
 
 /* Testimonials section styling */
@@ -439,6 +461,11 @@ address {
   font-size: 1rem;
 }
 
+.footer__menu a:hover {
+  cursor: pointer;
+  font-weight: var(--fw-bold);
+}
+
 .extra_space {
   padding-bottom: 2.5rem;
 }
@@ -446,17 +473,23 @@ address {
 .social_icons {
   display: flex;
   justify-content: center;
-  gap: .75rem;
+  gap: 0.75rem;
 }
 
 ion-icon {
   border: 1px solid var(--White);
   border-radius: 50%;
-  padding: .25rem;
+  padding: 0.25rem;
+}
+
+ion-icon:hover {
+  cursor: pointer;
+  color: var(--Inside-call-to-action-gradient1);
+  border-color: var(--Inside-call-to-action-gradient1);
 }
 
 .attribution {
-  font-size: .6875rem;
+  font-size: 0.6875rem;
   text-align: center;
 }
 .attribution a {
