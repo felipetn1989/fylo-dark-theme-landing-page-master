@@ -118,7 +118,7 @@ header {
   grid-template-areas:
     "one two"
     "three three";
-  row-gap: 3.75rem;
+  row-gap: 3.875rem;
 }
 
 footer {
@@ -147,6 +147,7 @@ h2 {
   grid-area: two;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   gap: 1.5rem;
 }
 
@@ -523,31 +524,33 @@ ion-icon:hover {
 
 @media screen and (min-width: 60em) {
   header {
-    padding: 5rem;
+    padding: 4.5rem 5rem;
     padding-bottom: 25rem;
+    row-gap: 4.75rem;
   }
 
   .header_logo {
-    width: 10.5rem;
+    width: 10.875rem;
   }
 
   .header_menu {
-    gap: 3.75rem;
+    gap: 3.8125rem;
   }
 
   .header_menu a {
-    font-size: 0.9375rem;
+    font-size: .9375rem;
   }
 
   .header_image {
     margin: auto;
-    padding-bottom: 0;
+    padding-bottom: 1rem;
   }
 
   .main_heading {
-    width: 80%;
+    gap: 1.875rem;
+    width: 60%;
     margin: auto;
-    transform: translateY(-25rem);
+    transform: translateY(-25.5rem);
     margin-bottom: -17rem;
   }
 
@@ -557,7 +560,7 @@ ion-icon:hover {
 
   .main_heading p {
     font-size: 1.25rem;
-    width: 70%;
+    width: 38rem;
     margin: auto;
   }
 
@@ -565,6 +568,10 @@ ion-icon:hover {
     padding: 1.125rem 0rem;
     font-size: 1rem;
     width: 17.5rem;
+  }
+
+  .top_button {
+    margin-top: unset;
   }
 
   .product_description {
