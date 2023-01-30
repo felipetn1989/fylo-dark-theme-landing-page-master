@@ -410,7 +410,7 @@ form {
   display: none;
   position: absolute;
   text-align: left;
-  font-size: .6875rem;
+  font-size: 0.6875rem;
   color: red;
   top: 3.25rem;
   left: 1.5rem;
@@ -538,7 +538,7 @@ ion-icon:hover {
   }
 
   .header_menu a {
-    font-size: .9375rem;
+    font-size: 0.9375rem;
   }
 
   .header_image {
@@ -576,14 +576,19 @@ ion-icon:hover {
 
   .product_description {
     grid-template-columns: 1fr 1fr;
-    place-items: center center;
-    column-gap: 0;
-    width: 80%;
-    margin: auto;
+    margin: unset;
+    row-gap: 4.75rem;
+  }
+
+  .access,
+  .collab {
+    place-self: center end;
   }
 
   .description_bloc {
-    width: 65%;
+    width: 25rem;
+    padding: unset;
+    padding-bottom: 1.625rem;
   }
 
   .description_bloc h2 {
@@ -591,6 +596,8 @@ ion-icon:hover {
   }
 
   .description_bloc img {
+    margin: unset;
+    margin-bottom: .75rem;
     width: 5rem;
   }
 
@@ -601,7 +608,7 @@ ion-icon:hover {
   .product_how {
     grid-template-columns: 1fr 1fr;
     gap: 6rem;
-    padding: 8rem 6rem 0 6rem;
+    padding: 8rem 6rem 2.75rem 6rem;
   }
 
   .product_how_text {
@@ -627,7 +634,7 @@ ion-icon:hover {
     gap: 3rem;
     padding: 0 6rem;
     place-items: center center;
-    margin-top: 9.25rem;
+    margin-top: 7rem;
   }
 
   .testimonials::before {
@@ -650,7 +657,7 @@ ion-icon:hover {
     width: 54rem;
     margin: auto;
     padding: 2.5rem 5rem;
-    margin-top: 2.5rem;
+    margin-top: 4.75rem;
   }
 
   .early_access h3 {
@@ -673,13 +680,14 @@ ion-icon:hover {
   }
 
   footer {
-    padding-top: 12rem;
-    padding-left: 7rem;
+    padding-top: 13.5rem;
+    padding-left: 7.5rem;
     grid-template-areas:
       "one one one"
       "two three four"
       "five five five";
-    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-columns: 3.4fr 1fr 1fr;
+    row-gap: 2rem;
   }
 
   .footer_logo {
@@ -691,7 +699,6 @@ ion-icon:hover {
       "one two"
       "one three";
     grid-template-columns: 1fr 1fr;
-    column-gap: 1rem;
     grid-template-rows: 0.25fr 1fr;
     grid-area: two; /* For footer grid */
   }
@@ -736,7 +743,7 @@ ion-icon:hover {
   ion-icon {
     width: 1rem;
     height: 1rem;
-    padding: .5rem;
+    padding: 0.5rem;
   }
 
   .attribution {
